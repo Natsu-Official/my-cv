@@ -65,7 +65,7 @@ export default function Home() {
 
         {/* CONTACT */}
         <Section title={t.contact}>
-          <p>Email: your@email.com</p>
+          <p>Email: delgercecegbrentgs@gmail.com</p>
         </Section>
 
       </main>
