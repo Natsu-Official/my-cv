@@ -8,8 +8,11 @@ import PDFButton from "../components/PDFButton";
 import SkillBar from "../components/SkillBar";
 import { translations } from "../lib/translations";
 
+// 🔥 TYPE FIX
+type Lang = "mn" | "en" | "jp";
+
 export default function Home() {
-  const [lang, setLang] = useState("mn");
+  const [lang, setLang] = useState<Lang>("mn");
   const [dark, setDark] = useState(true);
 
   const t = translations[lang];
@@ -23,7 +26,12 @@ export default function Home() {
       }
     >
       {/* NAVBAR */}
-      <Navbar />
+      <Navbar 
+        lang={lang} 
+        setLang={setLang} 
+        dark={dark} 
+        setDark={setDark} 
+      />
 
       {/* TOP CONTROLS */}
       <div className="flex justify-between p-5">
