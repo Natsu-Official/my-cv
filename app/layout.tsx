@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "Бүрэнтөгс | Software Engineer",
   description: "Portfolio & CV of Burentugs",
